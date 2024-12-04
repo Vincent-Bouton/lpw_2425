@@ -1,0 +1,8 @@
+<li>
+  <span>{{ todo.title }}</span>
+  <span>
+    @for (action of actions; track action) {
+      <app-button [id]="todo.id" [action]="action">{{ action }}</app-button>
+    }
+  </span>
+</li>

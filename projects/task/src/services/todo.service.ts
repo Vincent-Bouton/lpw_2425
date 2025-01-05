@@ -40,6 +40,7 @@ export class TodoService {
     if (todo) {
       todo.archived = true;
       this.taskSubject.next(this.getActiveTodos());
+      this.taskArchivedSubject.next(this.getArchivedTodos());
     }
   }
 
